@@ -6,8 +6,7 @@
 <title>SKanDDa | eCom & Trading</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <style>
-/* Reset */
-* {margin:0; padding:0; box-sizing:border-box;}
+*{margin:0; padding:0; box-sizing:border-box;}
 
 /* Body + Background */
 body {
@@ -16,82 +15,49 @@ body {
   min-height:100vh;
   background: url('Images/HomePage.jpg') no-repeat center center / cover;
   position: relative;
-  overflow-x: hidden;
 }
 
 /* Gradient overlay */
 body::before {
   content:"";
   position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
+  top:0; left:0;
+  width:100%; height:100%;
   background: linear-gradient(135deg, rgba(11,27,51,0.7), rgba(19,42,76,0.7));
   z-index:0;
 }
 
-/* Fixed navigation */
-nav {
-  position: fixed;
-  top:0;
-  left:0;
-  width:100%;
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  padding:15px 0;
-  background: rgba(11,27,51,0.8);
-  z-index:10;
-  backdrop-filter: blur(5px);
-}
-
-nav a {
-  color:white;
-  text-decoration:none;
-  padding:10px 25px;
-  border-radius:30px;
-  border:2px solid #f4b400;
-  font-weight:600;
-  transition:0.3s;
-}
-
-nav a:hover {
-  background:#f4b400;
-  color:#0b1b33;
-}
-
 /* Hero Section */
 .hero {
+  position:relative; z-index:1;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
   text-align:center;
-  height:100vh;
+  min-height:100vh;
   padding:0 20px;
-  position: relative;
-  z-index:1;
 }
 
 .hero .brand {
-  font-size:2.2em;
+  font-size:2.2rem;
   color:#f4b400;
   margin-bottom:20px;
   letter-spacing:3px;
 }
 
 .hero h1 {
-  font-size:3em;
+  font-size:3rem;
   margin-bottom:20px;
   text-shadow: 0 2px 5px rgba(0,0,0,0.6);
 }
 
 .hero p {
-  font-size:1.2em;
+  font-size:1.2rem;
   color:#ddd;
   max-width:700px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  text-shadow:0 1px 3px rgba(0,0,0,0.5);
+  margin-bottom:30px;
 }
 
 /* Cards Section */
@@ -99,25 +65,26 @@ nav a:hover {
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
-  gap:25px;
-  margin-top:30px;
+  gap:20px;
+  margin-top:20px;
 }
 
 .cards a.card {
-  display:block;               /* make <a> behave like block */
+  display:block;
   background: rgba(255,255,255,0.15);
   border-radius:20px;
-  padding:30px 20px;
-  width:250px;
+  padding:25px 20px;
+  width:240px;
   backdrop-filter: blur(10px);
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-decoration:none;        /* remove underline */
+  text-decoration:none;
   cursor:pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align:center;
 }
 
 .cards a.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 }
 
 .cards a.card h3 {
@@ -126,7 +93,7 @@ nav a:hover {
 }
 
 .cards a.card p {
-  font-size:0.95em;
+  font-size:0.95rem;
   color:#eee;
 }
 
@@ -138,7 +105,6 @@ footer {
   color:#ccc;
   position:relative;
   z-index:1;
-  margin-top:50px;
 }
 
 footer a {
@@ -160,14 +126,13 @@ footer a:hover {
 }
 
 @media(max-width:600px) {
-  .hero h1 {font-size:2em;}
-  .hero p {font-size:1em;}
+  .hero h1 {font-size:2rem;}
+  .hero p {font-size:1rem;}
   .cards a.card {width:80%;}
 }
 </style>
 </head>
 <body>
-
 
 <section class="hero">
   <div class="brand">SKanDDa</div>
@@ -195,8 +160,7 @@ footer a:hover {
 </section>
 
 <footer>
-  © 2025 SKanDDa Trading & Consultancy | Connecting Quality with Purpose |
-  <a href="contact.html">Contact Us</a>
+  © 2025 SKanDDa Trading & Consultancy | <a href="contact.html">Contact Us</a>
 </footer>
 
 </body>
